@@ -1,0 +1,870 @@
+/* STYLESHEET RESET CODE */
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+
+/* MY CODE */
+
+* {
+    text-decoration: none;
+}
+
+main {
+    padding-top: 100px;
+}
+
+body {
+    background-color: #f9f9f9;
+}
+
+/* HEADER STYLES */
+
+header {
+    background-color: #fff;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+header .header-logo img {
+    display: block;
+    margin: 0 auto;
+    height: 50px;
+    padding: 10px 0 12px 0;
+    transition: 0.2s ease-in-out;  
+}
+
+header nav ul {
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+header nav ul li {
+    display: inline-block;
+    list-style: none;
+    padding: 0 12px;
+}
+
+header nav ul li a {
+    font-family: 'Noto Sans JP', sans-serif;    
+    font-size: 14px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #111;
+    transition: 0.2s ease-in-out;    
+}
+
+header nav ul li a:hover {
+    color: #b0b0b0;;                         
+}    
+
+header .header-logo img:hover {
+    transform: scale(1.1);
+}
+
+@media only screen and (min-width: 768px) {
+    
+    header .header-logo img {
+        margin: 0;
+        float: left;
+        height: 60px;
+        padding: 20px 0 0 20px;
+    }
+    
+    header nav ul {
+        margin: 20px 0 20px 30px;
+        float: left;
+    }    
+    
+    header nav ul li a {
+        line-height: 60px; 
+        transition-duration: 0.2s ease-in;                       
+    }    
+}
+
+/* BANNER STYLES */
+
+.index-banner {
+    width: 100%;
+    height: calc(100vh - 100px);
+    background-image: url(images/index-banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: table;
+}
+
+.banner-center {
+    display: table-cell;
+    vertical-align: middle;
+    background-color: rgba(0, 0, 0, 0.6);    
+}
+
+.index-banner h2 {
+    font-family: 'Noto Sans JP', sans-serif;    
+    font-size: 50px; 
+    font-weight: 900; 
+    line-height: 60px;   
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 2px 9px #111;
+    padding-bottom: 10px;
+}
+
+.index-banner h1 {
+    font-family: 'Noto Sans JP', sans-serif;    
+    font-size: 20px; 
+    font-weight: 100;    
+    line-height: 30px;     
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 2px 9px #111;       
+}
+
+.menu-banner {
+    width: 100%;
+    height: calc(100vh - 100px);
+    background-image: url(images/menu-banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: table;
+}
+
+.menu-banner h2 {
+    font-family: 'Noto Sans JP', sans-serif;    
+    font-size: 50px; 
+    font-weight: 900; 
+    line-height: 60px;   
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 2px 9px #111;
+    padding-bottom: 10px;
+}
+
+.menu-banner h1 {
+    font-family: 'Noto Sans JP', sans-serif;    
+    font-size: 20px; 
+    font-weight: 100;    
+    line-height: 30px;     
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 2px 9px #111;       
+}
+
+.reservation-banner {
+    width: 100%;
+    height: calc(100vh - 100px);
+    background-image: url(images/reservation-banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: table;
+}
+
+.reservation-banner h2 {
+    font-family: 'Noto Sans JP', sans-serif;    
+    font-size: 50px; 
+    font-weight: 900; 
+    line-height: 60px;   
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 2px 9px #111;
+    padding-bottom: 10px;
+}
+
+.reservation-banner h1 {
+    font-family: 'Noto Sans JP', sans-serif;    
+    font-size: 20px; 
+    font-weight: 100;    
+    line-height: 30px;     
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 2px 9px #111;       
+}
+
+.about-banner {
+    width: 100%;
+    height: calc(100vh - 100px);
+    background-image: url(images/about-banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: table;
+}
+
+.about-banner h2 {
+    font-family: 'Noto Sans JP', sans-serif;    
+    font-size: 50px; 
+    font-weight: 900; 
+    line-height: 60px;   
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 2px 9px #111;
+    padding-bottom: 10px;
+}
+
+.about-banner h1 {
+    font-family: 'Noto Sans JP', sans-serif;    
+    font-size: 20px; 
+    font-weight: 100;    
+    line-height: 30px;     
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 2px 9px #111;       
+}
+
+.privacy-banner {
+    width: 100%;
+    height: calc(100vh - 100px);
+    background-image: url(images/privacy.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: table;
+}
+
+.privacy-banner h2 {
+    font-family: 'Noto Sans JP', sans-serif;    
+    font-size: 50px; 
+    font-weight: 900; 
+    line-height: 60px;   
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 2px 9px #111;
+    padding-bottom: 10px;
+}
+
+.privacy-banner h1 {
+    font-family: 'Noto Sans JP', sans-serif;    
+    font-size: 20px; 
+    font-weight: 100;    
+    line-height: 30px;     
+    color: #fff;
+    text-align: center;
+    text-shadow: 2px 2px 9px #111;       
+}
+
+
+@media only screen and (min-width: 768px) {
+
+    .index-banner {
+        height: 500px;
+    }
+
+    .menu-banner {
+        height: 500px;
+    }
+
+    .reservation-banner {
+        height: 500px;
+    }
+
+    .about-banner {
+        height: 500px;
+    }
+
+    .privacy-banner {
+        height: 500px;
+    }
+}
+
+
+@media only screen and (min-width: 1000px) {
+
+    .index-banner {
+        height: 500px;
+    }    
+
+    .menu-banner {
+        height: 500px;
+    }
+
+    .reservation-banner {
+        height: 500px;
+    }
+
+    .about-banner {
+        height: 500px;
+    }
+
+    .privacy-banner {
+        height: 500px;
+    }
+}
+
+/* MAIN STYLES */
+
+.index-content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.index-info {
+    flex-basis: 80%;
+    margin: 20px;
+    background-color: #fff;
+    box-shadow: #000 3px 3px 10px; 
+}
+
+.index-info img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;   
+}
+
+.index-info h3 {
+    font-family: 'Noto Sans JP', sans-serif;    
+    font-size: 28px; 
+    font-weight: 700; 
+    line-height: 35px;
+    color: #111;
+    text-align: center;    
+    padding: 20px 20px 10px 20px;
+}
+
+.index-info p {
+    font-family: 'Noto Sans JP', sans-serif;    
+    font-size: 16px; 
+    font-weight: 300; 
+    line-height: 25px;
+    color: #111;
+    text-align: center;    
+    padding: 0 20px 0 20px;
+    margin-bottom: 40px;
+}
+
+.index-links {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;      
+}
+
+.index-buttons {
+    flex-basis: 100%;    
+    display: block;
+    margin: 0 auto;
+    width: 100%;     
+}
+
+.index-link {       
+    background-color: #111;
+    margin: 20px;
+    transition: 0.2s ease-in-out; 
+}
+
+.index-link h3 {
+    font-family: 'Noto Sans JP', sans-serif;    
+    font-size: 28px; 
+    font-weight: 700;    
+    line-height: 100px;     
+    color: #fff;    
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.index-link:hover {
+    transform: scale(1.05);
+    background-color: #b0b0b0;
+}
+
+.menu-links-box {
+    flex-basis: 100%;    
+    display: block;
+    margin: 0 auto;
+    width: 100%;     
+}
+
+.menu-link {       
+    background-color: #111;
+    margin: 20px;
+    transition: 0.2s ease-in-out; 
+}
+
+.link-title {
+    font-family: 'Noto Sans JP', sans-serif;    
+    font-size: 28px!important; 
+    font-weight: 700!important;    
+    line-height: 100px!important;     
+    color: #fff !important;    
+    text-transform: uppercase!important;
+    text-align: center!important;
+}
+
+.menu-link:hover {
+    transform: scale(1.05);
+    background-color: #b0b0b0;
+}
+
+.menu-wrapper {  
+    width: 80%;
+    margin: 0 auto;
+}
+
+.menus-content {
+    display: flex;    
+    flex-flow: row wrap;
+    justify-content: space-between;  
+}
+
+.menus {
+    display: flex;    
+    flex-flow: row wrap; 
+    justify-content: space-between;             
+}
+
+.menu {      
+    width: 300px;    
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: #000 3px 3px 10px;    
+    margin: 0 auto;
+    margin-top: 40px;    
+}
+
+.menu-icon {
+    width: 60px;    
+    display: block;
+    margin: 0 auto;
+}
+
+.menu-icon img {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 100%;    
+}
+
+.menus h2 {
+    font-family: 'Noto Sans JP', sans-serif;    
+    font-size: 28px; 
+    font-weight: 700;     
+    color: #111;
+    text-align: center; 
+    text-decoration: underline;
+    padding-bottom: 30px;  
+}
+
+.menus h3 {
+    font-family: 'Noto Sans JP', sans-serif;    
+    font-size: 20px; 
+    font-weight: 500;    
+    color: #111;
+    text-align: center;
+    padding-bottom: 10px;       
+}
+
+.menus h4 {
+    font-family: 'Noto Sans JP', sans-serif;    
+    font-size: 16px; 
+    font-weight: 800; 
+    line-height: 25px;
+    color: #111;
+    text-align: center;
+    font-style: italic;
+    padding-bottom: 40px;
+}
+
+.menus p {
+    font-family: 'Noto Sans JP', sans-serif;    
+    font-size: 16px; 
+    font-weight: 300; 
+    line-height: 25px;
+    color: #111;
+    text-align: center;
+    font-style: italic;
+    padding-bottom: 5px;
+}
+
+.reservation-content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.form-content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center; 
+    background-color: #fff;
+    box-shadow: #000 3px 3px 10px; 
+    width: 300px;  
+}
+
+.form label {
+    font-family: 'Noto Sans JP', sans-serif;    
+    font-size: 16px; 
+    font-weight: 400;     
+    color: #111;
+}
+
+.form-content h2 {
+    font-family: 'Noto Sans JP', sans-serif;    
+    font-size: 28px; 
+    font-weight: 900;     
+    color: #111;
+    text-align: center;   
+    text-transform: uppercase;
+    padding: 20px 0;
+}
+
+.about-content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.about-info {
+    flex-basis: 80%;
+    margin: 20px;
+    background-color: #fff;
+    box-shadow: #000 3px 3px 10px; 
+}
+
+.about-info img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;   
+}
+
+.about-info h3 {
+    font-family: 'Noto Sans JP', sans-serif;    
+    font-size: 28px; 
+    font-weight: 700; 
+    line-height: 35px;
+    color: #111;
+    text-align: center;    
+    padding: 20px 20px 10px 20px;
+}
+
+.about-info p {
+    font-family: 'Noto Sans JP', sans-serif;    
+    font-size: 16px; 
+    font-weight: 300; 
+    line-height: 25px;
+    color: #111;
+    text-align: center;    
+    padding: 0 20px 0 20px;
+    margin-bottom: 40px;
+}
+
+.opening-hours {
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.opening-hours th {
+    font-family: 'Noto Sans JP', sans-serif;    
+    font-size: 16px; 
+    font-weight: 300; 
+    line-height: 30px;
+    color: #111;    
+    text-align: right;    
+    padding-right: 20px;
+    border-bottom: 2px solid #ddd;  
+}
+
+.opening-hours td {
+    font-family: 'Noto Sans JP', sans-serif;    
+    font-size: 16px; 
+    font-weight: 500; 
+    line-height: 30px;
+    color: #111;  
+    border-bottom: 2px solid #ddd;   
+}  
+
+.contact-us {
+    margin: 0 auto;
+    margin-bottom: 40px;        
+}    
+
+.contact-us th {
+    font-family: 'Noto Sans JP', sans-serif;    
+    font-size: 16px; 
+    font-weight: 300; 
+    line-height: 30px;
+    color: #111;    
+    text-align: right;    
+    padding-right: 10px;
+    border-bottom: 2px solid #ddd;  
+}
+
+.contact-us td {
+    font-family: 'Noto Sans JP', sans-serif;    
+    font-size: 16px; 
+    font-weight: 500; 
+    line-height: 30px;
+    color: #111;  
+    border-bottom: 2px solid #ddd;   
+}
+
+.map-container {
+    display: block;
+    margin: 0 auto;
+}
+
+#map {
+    display: block;
+    margin: 0 auto;
+    height: 300px;
+    width: 90%;
+    margin-bottom: 20px;
+}  
+
+.privacy-content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.privacy-info {
+    flex-basis: 80%;
+    margin: 20px;
+    background-color: #fff;
+    box-shadow: #000 3px 3px 10px; 
+}
+
+.privacy-icon {
+    width: 60px;    
+    display: block;
+    margin: 0 auto;
+}
+
+.privacy-icon img {
+    margin-top: 30px;    
+    width: 100%;    
+}
+
+.privacy-info h3 {
+    font-family: 'Noto Sans JP', sans-serif;    
+    font-size: 28px; 
+    font-weight: 700; 
+    line-height: 35px;
+    color: #111;
+    text-align: center;    
+    padding: 20px 20px 10px 20px;
+}
+
+.privacy-info p {
+    font-family: 'Noto Sans JP', sans-serif;    
+    font-size: 16px; 
+    font-weight: 300; 
+    line-height: 25px;
+    color: #111;
+    text-align: center;    
+    padding: 0 20px 0 20px;
+    margin-bottom: 40px;
+}
+
+@media only screen and (min-width: 768px) {
+    .index-info {
+        flex-basis: 70%;
+    }
+
+    .index-buttons {
+        flex-basis: 80%;    
+        display: block;        
+        width: 100%;            
+    }    
+
+    .menu-wrapper {  
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .menu {
+        width: 500px; 
+    }
+
+    .about-info {
+        flex-basis: 70%;
+    }
+
+    #map {
+        height: 500px;
+    } 
+
+    .form-content {
+        width: 500px;
+    }
+
+    .privacy-info {
+        flex-basis: 70%;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .index-info {
+        flex-basis: 600px;
+    }        
+    
+    .index-buttons {
+        flex-basis: 40%;    
+        display: block;        
+        width: 100%;            
+    } 
+
+    .menu-wrapper {  
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .menu {
+        width: 600px; 
+    }  
+
+    .about-info {
+        flex-basis: 600px;
+    } 
+    
+    #map {
+        height: 500px;
+    } 
+
+    .form-content {
+        width: 500px;
+    }
+
+    .privacy-info {
+        flex-basis: 600px;
+    }
+}
+
+/* FOOTER STYLES */
+
+footer {
+    width: calc(100% - 40px);
+    padding: 20px 20px;
+    margin-top: 20px;
+    background-color: #111;
+    overflow: hidden;
+}
+
+footer ul {
+    width: fit-content;    
+    display: block;
+    margin: 0 auto;
+}
+
+footer ul li {
+    display: block;
+    list-style: none; 
+    text-align: center;   
+}
+
+footer ul li a {
+    font-family: 'Noto Sans JP', sans-serif;    
+    font-size: 16px;
+    font-weight: 300;   
+    color: #fff;
+    line-height: 30px;    
+}
+
+footer ul li p {
+    font-family: 'Noto Sans JP', sans-serif;    
+    font-size: 16px;
+    font-weight: 300;   
+    color: #fff;
+    line-height: 30px;    
+}
+
+footer ul li a:hover {
+    color: #b0b0b0;   
+}

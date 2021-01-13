@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0"
+        name="viewport">
+  <title>About Us | The Haukai Restaurant</title>
+  <link href="https://fonts.gstatic.com"
+        rel="preconnect">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+  <link href="styles.css"
+        rel="stylesheet">
+</head>
+<body>
+  <header>
+    <a class="header-logo"
+            href="index.html"><img alt="The Haukai Restaurant Logo"
+         src="images/logo.png"></a>
+    <nav>
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="menu.html">Menu</a>
+        </li>
+        <li>
+          <a href="reservations.html">Reservations</a>
+        </li>
+        <li>
+          <a href="about.html">About</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="about-banner">
+      <div class="banner-center">
+        <h2>About Us</h2>
+        <h1>Find all of our details down below!</h1>
+      </div>
+    </section>
+    <div class="wrapper">
+      <section class="about-content">
+        <div class="about-info">
+          <img alt="Desk"
+               src="images/about-us.jpg">
+          <h3>About Us</h3>
+          <p>Haukai Restaurant specialises in Māori kai and is based in the Bay of Islands.<br>
+          <br>
+          It was started by a couple who are keen on creating a business that would appeal to locals and tourists visiting the area.<br>
+          <br>
+          The owners also want customers to experience te ao Māori with the use of karakia for blessing food and other Māori culture</p>
+        </div>
+        <div class="about-info"
+             id="opening-hours">
+          <img alt="Opening Sign"
+               src="images/opening-hours.jpg">
+          <h3>Opening Hours</h3>
+          <p>The restaurant is only open in the evenings at the moment, from Wednesday to Sunday inclusive.</p>
+          <table class="opening-hours">
+            <tr>
+              <th>Monday</th>
+              <td>Closed</td>
+            </tr>
+            <tr>
+              <th>Tuesday</th>
+              <td>Closed</td>
+            </tr>
+            <tr>
+              <th>Wednesday</th>
+              <td>5pm - 11pm</td>
+            </tr>
+            <tr>
+              <th>Thursday</th>
+              <td>5pm - 11pm</td>
+            </tr>
+            <tr>
+              <th>Friday</th>
+              <td>5pm - 11pm</td>
+            </tr>
+            <tr>
+              <th>Saturday</th>
+              <td>5pm - 11pm</td>
+            </tr>
+            <tr>
+              <th>Sunday</th>
+              <td>5pm - 11pm</td>
+            </tr>
+          </table>
+        </div>
+        <div class="about-info"
+             id="contact-info">
+          <img alt="Desk"
+               src="images/location.jpg">
+          <h3>Contact Us</h3>
+          <table class="contact-us">
+            <tr>
+              <th>Address</th>
+              <td>1 Island Street Kerikeri</td>
+            </tr>
+            <tr>
+              <th></th>
+              <td>Bay of Islands</td>
+            </tr>
+            <tr>
+              <th>Phone</th>
+              <td>(09) 401-4019</td>
+            </tr>
+            <tr>
+              <th>Email</th>
+              <td>info@thehaukai.com</td>
+            </tr>
+          </table>
+        </div>
+        <div class="about-info">
+          <h3>Location</h3>
+          <div class="map-container">
+            <div id="map"></div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer>
+    <ul>
+      <li>
+        <p>The Haukai Restaurant ©</p>
+      </li>
+      <li>
+        <a href="privacy.html">Privacy Statement</a>
+      </li>
+    </ul>
+  </footer>
+  <script>
+    function initMap(){
+      var location = {lat: -35.218400, lng: 173.962880};
+      var map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 18,
+        center: location
+      });
+      var marker = new google.maps.Marker({
+        position: location,
+        map: map
+      });
+    }    
+  </script> 
+  <script async
+        defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNFduHXgdKdGYsVIoZpRKc3cChhAbIvy8&callback=initMap"></script>
+</body>
+</html>
